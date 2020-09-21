@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--要素内で使用する言語を日本語表記に指定する-->
+<html lang = "ja">
+<!--webページが読み込まれてもブラウザ上に表示されない部分-->
+<head>
+    <!--文字コードをUTF-8に設定する-->
+    <meta charset="UTF-8">
+    <!--サイトのサイズをデバイスの横幅に、横スクロールが表示されない程度にフィットさせて表示するという設定
+        また、横幅の値はデバイス毎に固定された値を使用する-->
+    <meta name = "viewport" content="width=device-width" >
+    <link rel = "stylesheet" href="style.css">
+    <title>TODAY</title>
+</head>
+   <!--文書の本体はここから-->
+    <body>
+        <!--タイトル領域はここから-->
+        <header>
+           <h1>TODAY</h1>
+        </header>
+        <!--タイトル領域はここまで-->
+   <!--文書の本体はここまで-->
+   <!--クラス要素定義はここから-->
+   <div class = "container">
+       <script>
+           //日付を表示
+           /*
+           document:今表示されているページが自信を表す
+           オブジェクト：対象
+           メソッド：やってほしいこと
+           オブジェクト.メソッド(パラメータ1,パラメータ2)
+           →誰に.どうする(何を)
+           　→今表示されている文書に表示する(20xx/01/23を)【今回の場合】
+           */
+
+           /*Dateオブジェクトの役割を持った現在の日付を持った実体にtodayという名前をつける*/
+           var today = new Date();
+           var newYear = new Date(2017,2,1);
+           var dateStr = new Date();
+           /*インスタンスtodayが持っている現在日付を表示させる*/
+           document.write('<p>今日は'+today.getDate());
+           document.write('<p>元旦は'+newYear.getFullYear()+'年'+newYear.getMonth() +'月'+ today.getDate() + '日です');
+           document.write('<p>日付文字列'+dateStr()+ 'です');
+
+
+
+           var answer = 1;
+           document.write('<br>'+ answer + 'です');
+
+       </script>
+    </div>
+   <!--クラス要素定義はここまで-->
+    </body>
+   <!--文書の本体はここまで-->
+</html>

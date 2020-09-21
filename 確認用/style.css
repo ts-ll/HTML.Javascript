@@ -1,0 +1,8 @@
+body {
+    /*テキスト中央揃え*/
+    text-align: center; 
+}
+/*dateクラスを指定する*/
+.date {
+  font-size: 300%;
+}

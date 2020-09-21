@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--要素内で使用する言語を日本語表記に指定する-->
+<html lang = "ja">
+<!--webページが読み込まれてもブラウザ上に表示されない部分-->
+    <head>
+        <!--文字コードをUTF-8に設定する-->
+        <meta charset="UTF-8">
+        <!--サイトのサイズをデバイスの横幅に、横スクロールが表示されない程度にフィットさせて表示するという設定
+        　　　また、横幅の値はデバイス毎に固定された値を使用する-->>
+        <meta name = "viewport" content="width=device-width" >
+　　　　　<title>TODAY</title>
+
+        <!--Latest compiled and minified CSS-->
+        <!--ファイルがある場所はhrefで定義して、そのファイルとの関係性をrelでスタイルシートと定義する-->
+        <!--integrity:ハッシュ値を指定して、ハッシュ値が一致した場合のみリソースの読み込みを行う。
+            crossorigin:CORS(クロスドメイン通信)設定属性です。別オリジンから読み込んだ画像などのリソースを文書内で利用する際のルールを指定する
+            anonymous：Cookie やクライアントサイドの SSL 証明書、HTTP 認証などのユーザ認証情報は不要とする
+            SSL証明書：ブラウザとウェブサーバ間で「通信データの暗号化」を行うための電子証明書
+            クッキー：自身で扱っているPCやスマホで保持しているデータ
+            オリジン：URLが指し示すWebサイトの場所や通信手段のこと
+            クロスドメイン通信：セキュリティを保つためのブラウザの仕組みで異なるオリジンのデータにアクセスできないように制限するもの
+            ホワイトスペース：ソースコードには空白や改行として表現するが、ブラウザで表示させる際には反映されない文字のこと
+            サブリソース完全性:取得したリソースが意図せず改ざんされていないかをブラウザーが検証するセキュリティ機能-->
+        <link rel = "stlyesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFek1dGmJRAkycuHAHRg320mUcww7on3RYd4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
