@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--要素内で使用する言語を日本語表記に指定する-->
+<html lang = "ja">
+<!--webページが読み込まれてもブラウザ上に表示されない部分-->
+    <head>
+        <!--文字コードをUTF-8に設定する-->
+        <meta charset="UTF-8">
+        <!--サイトのサイズをデバイスの横幅に、横スクロールが表示されない程度にフィットさせて表示するという設定
+        　　　また、横幅の値はデバイス毎に固定された値を使用する-->
+        <meta name = "viewport" content="width=device-width">
+        <link rel = "stylesheet" href="style.css">
+　　　　　<title>TIMER</title>
+    </head>
+    <body>
+        <!--範囲に入っているHTMLの各要素をブロックレベル要素としてグループ化することができる要素にクラス属性をつけたものをcontainerと名付ける
+            ブロックレベル要素：見出し・段落・表など、文書を構成する基本となる要素
+        -->
+        <div class="container">
+            <script>
+                /*段落タグにid属性をつけてid属性にtimerという名前を指定して、00:00:00と表示する*/
+                document.write('<p id="timer"> 00:00:00</p>');
+                document.write('<p id="timer"> 00:01:00</p>');
+            </script>
+        
+            <div>
+            <!--ボタンダグにid属性とclass属性をつけて、id属性には「start_stop」class属性には「btn btn-lg btn-primary」という名前を指定して、STARTを表示する-->
+                <button id="start_stop" class= "btn btn-lg btn-primary">START</button>
+            </div>
+
+
+    </body>
+
+    
