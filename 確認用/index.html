@@ -32,14 +32,21 @@
            　→今表示されている文書に表示する(20xx/01/23を)【今回の場合】
            */
 
-           /*Dateオブジェクトの役割を持った現在の日付を持った実体にtodayという名前をつける*/
+           /*Dateオブジェクトの役割を持った現在の日付を持った実体にtoday/newYear/dateStrという名前をつける*/
            var today = new Date();
-           var newYear = new Date(2017,2,1);
+           var newYear = new Date();
            var dateStr = new Date();
+           /*インスタンスtodayの月*/
+           var todayHtml = today.getFullYear()+'/'+(today.getMonth()+1) +'/'+ today.getDate()+'('+today.getDay()+')曜日';
+           var nowHtml = today.getHours()+':'+today.getMinutes()+':'+today.getSeconds();
            /*インスタンスtodayが持っている現在日付を表示させる*/
-           document.write('<p>今日は'+today.getDate());
-           document.write('<p>元旦は'+newYear.getFullYear()+'年'+newYear.getMonth() +'月'+ today.getDate() + '日です');
-           document.write('<p>日付文字列'+dateStr()+ 'です');
+           document.write('<p>現在の日付は'+todayHtml+'です');
+           document.write('<p>現在時刻'+nowHtml+ 'です');
+           /*段落のタグの要素を持ったクラスにdateという名前をつけて年月日のプロパティを持っているインスタンスを結合して表示させる。
+           　 これをやることで、style.cssで設定している文字フォントサイズ変更を適用できる。*/
+           document.write('<p class = "date">'+ todayHtml + '</p>');
+
+
 
 
 

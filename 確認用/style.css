@@ -2,6 +2,13 @@ body {
     /*テキスト中央揃え*/
     text-align: center; 
 }
+h1{
+    background-color: black;
+    color: white;
+}
+header{
+    margin-bottom: 100px;
+}
 /*dateクラスを指定する*/
 .date {
   font-size: 300%;
